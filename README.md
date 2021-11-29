@@ -1,108 +1,378 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Brainworks
 
-Welcome Michelle3334,
+## Project 5 - E-Commerce Applications
+<img src="#">
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The aim of this project was to build a Full-Stack site based on business logic used to control a centrally-owned dataset. This includes setting up an authentication mechanism and providing the ability to make purchases.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Brainworks sells brain teasers, puzzles and logic games to the general public. They cater for all age groups and have a wide variety to choose from. There is also a fun brainteaser section for users to test their brain power.
 
-## Gitpod Reminders
+The live site can be found <a href="" target="_blank" rel="noopener">here</a>. (Note: Right click on link to open a new tab).
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# Table of Contents
+1. [UX](https://github.com/Michelle3334/brainworks#ux)
+    * [Website owner goals](https://github.com/Michelle3334/brainworks#website-owner-business-goals)
+    * [User stories](https://github.com/Michelle3334/brainworks#user-stories)
+    * [Wireframes](https://github.com/Michelle3334/brainworks#wireframes)
+    * [Design](https://github.com/Michelle3334/brainworks#design)
+2. [Features](https://github.com/Michelle3334/brainworks#features)
+3. [Database Schema](https://github.com/Michelle3334/brainworks#database-schema)
+4. [Technologies Used](https://github.com/Michelle3334/brainworks#technologies-used)
+5. [Testing](https://github.com/Michelle3334/brainworks#testing)
+    * [Functionality testing](https://github.com/Michelle3334/brainworks#functionality-testing)
+    * [Code Validation](https://github.com/Michelle3334/brainworks#code-validation)
+    * [Compatibility testing](https://github.com/Michelle3334/brainworks#compatibility-testing)
+    * [Performance testing](https://github.com/Michelle3334/brainworks#performance-testing)
+    * [User stories testing](https://github.com/Michelle3334/brainworks#user-stories-testing)
+    * [Bugs](https://github.com/Michelle3334/brainworks#bugs)
+6. [Deployment](https://github.com/Michelle3334/brainworks#deployment)
+7. [Credits](https://github.com/Michelle3334/brainworks#credits)
+8. [Acknowledgments](https://github.com/Michelle3334/brainworks#acknowledgements)
 
-`python3 -m http.server`
+# UX
+## Website owner business goals
+* I would like to be able to add a product to the store.
+* I would like to be able to delete a product from the store.
+* I would like to be able to edit a product.
 
-A blue button should appear to click: _Make Public_,
+## User Stories
+### New user goals:
+* I would like to be able to view the products.
+* I would like to view information about individual products.
+* I would like to be able to register for an account.
+* I would like email confirmation after registering for an account.
+* I would like to be able to get in contact with the website owner.
+### Returning user goals:
+* I would like to be able to login or logout.
+* I would like to be able to recover my lost password.
+* I would like to have a personalised profile to view order history and amend my details.
+* I would like to be able to sort or filter products.
+* I would like to be able to search for a product.
+I would like to be able to select and adjust a quantity of an item to purchase.
+* I would like to view the items in my shopping cart.
+* I would like to view the order confirmation after checking out.
+* I would like to receive an email confirmation after placing an order.
 
-Another blue button should appear to click: _Open Browser_.
+[Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Wireframes
+I used Balsamiq to create the wireframes.
 
-A blue button should appear to click: _Make Public_,
+### Desktop view
+* Home page 
+<img src="media/home_desktop.PNG" >
 
-Another blue button should appear to click: _Open Browser_.
+* Contact
+<img src="media/contact_desktop.PNG">
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* Products
+<img src="media/products_desktop.PNG">
 
-To log into the Heroku toolbelt CLI:
+* Product detail
+<img src="media/item_desktop.PNG">
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* Brainteasers:
+<img src="media/teasers_desktop.PNG">
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* Sign In
+<img src="media/signin_desktop.PNG">
 
-------
+* Register
+<img src="media/register_desktop.PNG">
 
-## Release History
+* Profile
+<img src="media/profile_desktop.PNG">
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* Cart
+<img src="media/cart_desktop.PNG">
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* Checkout
+<img src="media/checkout_desktop.PNG">
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Mobile view
+* Home page
+<img src="media/home_mobile.PNG">
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* Contact 
+<img src="media/contact_mobile.PNG">
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* Products
+<img src="media/products_mobile.PNG">
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* Product detail
+<img src="media/item_mobile.PNG">
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* Brainteasers:
+<img src="media/teasers_mobile.PNG">
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* Sign In
+<img src="media/signin_mobile.PNG">
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* Register
+<img src="media/register_mobile.PNG">
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* Profile
+<img src="media/profile_mobile.PNG">
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* Cart
+<img src="media/cart_mobile.PNG">
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* Checkout
+<img src="media/checkout_mobile.PNG">
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+[Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Design
+### Colors
+The main colors used in this project:
+* Background color: 
+* Font color: 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Fonts
+Sans-Serif is used as the backup font. 
 
-------
+### Images
+Images were sourced from 
 
-## FAQ about the uptime script
+[Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
-**Why have you added this script?**
+# Features
+## Existing Features
+### Navigation Bar
+   
+    
+### Products
+   
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Contact
+   * This page invites the user to submit comments or suggestions to help improve the website.
+   * On submission of the form the user is provided with a confirmation message.
+   * The information provided is sent to an active gmail account. 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Profile page
+    
+* If the user is logged in they are able to view and update their profile.
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## Future features
+* 
 
-**Can I opt out?**
+[Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+# Database Schema
+### User Profile model
+* Django's user and admin model was utilised, with some modifications for the user profile display and update.
+<img src="media/dbm_userprofile.PNG">
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Products app
+<img src="media/dbm_products.PNG">
+<img src="media/dbm_categories.PNG">
 
-**Anything more?**
+### Cart app
+<img src="media/dbm_order.PNG">
+<img src="media/dbm_items.PNG">
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
+# Technologies Used:
+### Programming Languages:
+* CSS, HTML, Javascript, Python and Django.
+### Database framework
+* Postgres.
+### Git
+* Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+### Github
+* GitHub was used to store the projects code after being pushed from Git.
+### Bootstrap 5
+* Bootstrap was used to for design and to make the website responsive.
+### Balsamiq
+* Balsamiq was used to create the wireframes during the design process.
 
-Happy coding!
+[Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
+
+# Testing
+## Functionality Testing
+### Manual testing
+* I used Google Chrome developer tools throughout the development process for testing and solving problems with style and display issues.
+* I used Github Project and Issues to track tasks. After each task completion, I would fully test it before moving on to the next task.
+* All links were tested multiple times during the development process and again once the project was completed to ensure that all pages were linked correctly.
+* All Forms and form elements were tested to ensure that they work as they should, with user feedback on errors as well as user feedback on successful submission.
+
+### Django testing framework
+
+* The majority of the view, models and forms were tested using the unit testing functionality in Django, these tests can be viewed in the <code>test_forms.py</code>, <code>test_views.py</code> and <code>test_models.py</code> files in the various apps. The remainder were tested manually during the functional testing both during development and after completion.
+
+    <img src="#">
+    
+* **Home app**
+
+    <img src="#">
+
+* **Products app**
+
+    <img src="#">
+
+* **Cart app**
+
+    <img src="#">
+
+* **Checkout app**
+
+    <img src="#">
+
+* **Profiles app**
+
+    <img src="#">
+
+## Code Validation
+**1. CSS Validation using <a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank" rel="noopener">W3C CSS Validator Services</a>.**
+
+
+<img src="#">
+
+**2. <a href="http://pep8online.com/">PEP8</a> was used to test the Python code**
+
+
+
+**3. <a href="https://beautifytools.com/javascript-validator.php">Beautify Tools</a> was used to test the Javascript snippets.**
+
+
+
+[Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
+
+## Compatibility Testing
+* The website was tested on Google Chrome, and Samsung cellphones.
+* The website was viewed on a variety of device sizes such as Desktop, Samsung S10, Samsung tablet and Iphone 11, I also used the responsive function when inspecting the pages to view various sizes. 
+
+## Performance testing
+I ran the Lighthouse tool to check performance of the website. 
+Screenshots of the final test are presented below:
+* Desktop
+    * Home page
+    <img src="#">
+    
+    * Gallery
+    <img src="#">
+    
+    * About page
+    <img src="#">
+
+* Mobile
+    * Home page
+    <img src="#">
+    
+    * Gallery
+    <img src="#">
+    
+    * About page
+    <img src="#">
+
+[Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
+
+## User Stories testing
+
+### New user goals
+1. I would like to be able to view the products.
+2. I would like to view information about individual products.
+3. I would like to be able to register for an account.
+4. I would like email confirmation after registering for an account.
+5. I would like to be able to get in contact with the website owner.
+
+### Returning user goals:
+1. I would like to be able to login or logout.
+2. I would like to be able to recover my lost password.
+3. I would like to have a personalised profile to view order history and amend my details.
+4. I would like to be able to sort or filter products.
+5. I would like to be able to search for a product.
+6. would like to be able to select and adjust a quantity of an item to purchase.
+7. I would like to view the items in my shopping cart.
+8. I would like to view the order confirmation after checking out.
+9. I would like to receive an email confirmation after placing an order.
+
+### As a website owner:
+1. I would like to be able to add a product to the store.
+2. I would like to be able to delete a product from the store.
+3. I would like to be able to edit a product.
+
+## Bugs
+
+
+[Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
+
+# Deployment
+The project was deployed to GitHub Pages using the following steps, I used Gitpod as a development environment where I commited all changes to git version control system. I used the push command in Gitpod to save changes into GitHub.
+
+### Deployment to Heroku
+Before creating a Heroku app make sure your project has these two files:
+
+* requirements.txt - You can create one by using <code>pip3 freeze > requirements.txt</code>
+* Procfile - You can create one by using echo web: <code>python run.py > Procfile</code>
+
+### Create application:
+
+1. Navigate to Heroku's site <a href="https://id.heroku.com/login" target="_blank" rel="noopener">here</a>. (Note: Right click on link to open a new tab).
+2. Register and/or Login as applicable.
+3. Click on the new button in the top right and select "Create new app".
+4. Enter the app name and region closest to you.
+5. Click the create app button.
+
+### Set environment variables:
+
+1. Click on the settings tab and then click "Reveal config vars".
+
+2. Config variables added throughout project:
+(add image of variables)
+
+### Setting up database in deployment
+
+1. Temporarily add the <code>DATABASE_URL</code> to <code>settings.py</code>:
+
+    <code>DATABASES = {
+'default': dj_database_url.parse('your_postgres_database_url')
+}</code>
+
+2. Migrate the data from development to production version.
+
+    * To migrate the database models in the project to the Postgres database you can use the following command:
+
+    <code>python3 manage.py migrate</code>
+
+3. You will then need a superuser for the Postgres database too. To create one you can use the following command:
+
+    <code>python3 manage.py createsuperuser</code>
+
+4. Remove the Postgres database URL from settings.py as this should not in any case be deployed to GitHub for security reasons.
+
+6. To connect your Heroku app to be deployed from a Github repository, you can follow these steps:
+
+    * Open the heroku app page on the deploy tab and select GitHub - Connect to GitHub.
+    * Sign into GitHub if not already.
+    * A prompt to find a Github repository to connect to will then be displayed.
+    * Enter the repository name for the project and click search.
+    * Once the repository has been found, click the connect button.
+6. Once you have your GitHub repository connected, without leaving deploy tab:
+
+    * Under Automatic deploys section, choose the branch you want to deploy from and then click the "Enable Automatic Deploys" button.
+    * To deploy your app to Heroku click the "Deploy Branch" button.
+
+[Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
+
+# Credits
+## Code
+* 
+
+## Content
+* 
+
+## Media
+* 
+
+## Acknowledgements
+* My mentor for support, advice and feedback.
+* The students on Slack for peer review and comments.
+* Code Institute Tutor support for help with coding issues.
+* My family and friends for their support, feedback and testing.
+
+[Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
