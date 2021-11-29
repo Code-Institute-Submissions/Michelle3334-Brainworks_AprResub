@@ -132,7 +132,8 @@ The main colors used in this project:
 Sans-Serif is used as the backup font. 
 
 ### Images
-Images were sourced from 
+Images were sourced from:
+* <a href="https://pixabay.com/">Pixabay</a>
 
 [Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
