@@ -129,7 +129,7 @@ The main colors used in this project:
 * Font color: 
 
 ### Fonts
-Sans-Serif is used as the backup font. 
+Sedgwick+Ave is used for the logo, with Roboto as the main font for all other text. Sans-Serif is used as the backup font. 
 
 ### Images
 Images were sourced from:
@@ -186,10 +186,15 @@ Images were sourced from:
 * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 ### Github
 * GitHub was used to store the projects code after being pushed from Git.
-### Bootstrap 5
+### Bootstrap
 * Bootstrap was used to for design and to make the website responsive.
 ### Balsamiq
 * Balsamiq was used to create the wireframes during the design process.
+### Google Fonts
+* Google Fonts was used to import fonts.
+### Font Awesome
+* Font Awesome was used to add icons for design and UX purposes.
+
 
 [Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
