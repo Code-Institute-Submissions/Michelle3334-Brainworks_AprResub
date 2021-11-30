@@ -69,7 +69,7 @@ body {
 }
 
 .hero {
-    background: url('media/hero_image.jpg') no-repeat center center fixed;
+    background: url('/media/hero_image.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
 }
@@ -82,6 +82,7 @@ body {
       max-width: 80%;
     }
   }
+
   
 .fixed-top {
     position: fixed;
