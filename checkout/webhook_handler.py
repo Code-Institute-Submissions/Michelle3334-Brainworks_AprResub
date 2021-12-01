@@ -1,3 +1,4 @@
+"""Webhook handler"""
 import json
 import time
 from django.core.mail import send_mail
@@ -45,7 +46,6 @@ class StripeWH_Handler:
         Handle the payment_intent.succeeded webhook from Stripe
         """
         intent = event.data.object
-        print(intent)
         pid = intent.id
         cart = intent.metadata.cart
         save_info = intent.metadata.save_info
@@ -128,15 +128,6 @@ class StripeWH_Handler:
                             quantity=item_data,
                         )
                         order_line_item.save()
-                    else:
-                        for size, quantity in item_data['items_by_size'].items():
-                            order_line_item = OrderLineItem(
-                                order=order,
-                                product=product,
-                                quantity=quantity,
-                                product_size=size,
-                            )
-                            order_line_item.save()
             except Exception as e:
                 if order:
                     order.delete()
