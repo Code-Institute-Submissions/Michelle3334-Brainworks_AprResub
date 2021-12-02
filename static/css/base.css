@@ -122,24 +122,39 @@ input[name='q']::placeholder {
 
 /* -------------------------------- Media Queries */
 
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-    .container {
-      max-width: 80%;
+/* XXL screens */
+@media (min-width: 1375px) {
+    .header-container {
+        padding-top: 70px;
     }
-  }
-
-  
-.fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
 }
 
-.header-container {
-    padding-top: 164px;
+/* XL screens */
+@media (max-width: 1375px) {
+    .header-container {
+        padding-top: 130px;
+    }
+}
+
+/* Large screens */
+@media (max-width: 992px) {
+    .header-container {
+        padding-top: 180px;
+    }
+}
+
+/* Medium screens */
+@media (max-width: 450px) {
+    .header-container {
+        padding-top: 250px;
+    }
+}
+
+/* Small screens */
+@media (max-width: 450px) {
+    .header-container {
+        padding-top: 250px;
+    }
 }
 
 /* Allauth form formatting */
