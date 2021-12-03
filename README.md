@@ -5,7 +5,7 @@
 
 The aim of this project was to build a Full-Stack site based on business logic used to control a centrally-owned dataset. This includes setting up an authentication mechanism and providing the ability to make purchases.
 
-Brainworks sells brain teasers, puzzles and logic games to the general public. They cater for all age groups and have a wide variety to choose from. There is also a fun brainteaser section for users to test their brain power.
+Brainworks sells brain teaser puzzles and books games to the general public. They cater for all age groups and have a wide variety to choose from. There is also a fun brainteaser section for users to test their brain powe
 
 The live site can be found <a href="" target="_blank" rel="noopener">here</a>. (Note: Right click on link to open a new tab).
 
@@ -37,7 +37,7 @@ The live site can be found <a href="" target="_blank" rel="noopener">here</a>. (
 
 ## User Stories
 ### New user goals:
-* I would like to be able to view the products.
+* I would like to be able to view a list of products.
 * I would like to view information about individual products.
 * I would like to be able to register for an account.
 * I would like email confirmation after registering for an account.
@@ -131,10 +131,6 @@ The main colors used in this project:
 ### Fonts
 Sedgwick+Ave is used for the logo, with Roboto as the main font for all other text. Sans-Serif is used as the backup font. 
 
-### Images
-Images were sourced from:
-* <a href="https://pixabay.com/">Pixabay</a>
-
 [Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
 # Features
@@ -155,7 +151,7 @@ Images were sourced from:
 
 ### Profile page
     
-* If the user is logged in they are able to view and update their profile.
+* If the user is logged in they are able to view and update their profile as well as view their order history.
 
 
 ## Future features
@@ -164,6 +160,11 @@ Images were sourced from:
 [Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
 # Database Schema
+
+### DBM flow
+
+<img src="">
+
 ### User Profile model
 * Django's user and admin model was utilised, with some modifications for the user profile display and update.
 <img src="media/dbm_userprofile.PNG">
@@ -367,13 +368,19 @@ Before creating a Heroku app make sure your project has these two files:
 
 # Credits
 ## Code
-* 
+* I followed the course content modules while writing the code for the cart functionality, Stripe and Webhooks.
 
 ## Content
-* 
+* All product information and images was sourced from:
+    * <a href="https://amazon.com/">Amazon</a>
+    * <a href="https://ebay.com/">E-Bay</a>
+    * <a href="https://walmart.com/">Walmart</a>
+    * <a href="https://www.etsy.com/">Etsy</a>
+    
 
 ## Media
-* 
+The hero image on the home pages was sourced from:
+* <a href="https://pixabay.com/">Pixabay</a>
 
 ## Acknowledgements
 * My mentor for support, advice and feedback.
