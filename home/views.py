@@ -38,4 +38,9 @@ def contact(request):
                 request, "Form not submitted. Please correct any errors")
             return render(request, 'contact.html', {'form': form})
     form = ContactForm()
-    return render(request, "contact/contact.html", {'form': form})
+    template = 'contact/contact.html'
+    context = {
+        'form': form,
+        'on_contact_page': True,
+    }
+    return render(request, template, context)
