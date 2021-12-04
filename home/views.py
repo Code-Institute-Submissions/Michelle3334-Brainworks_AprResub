@@ -38,4 +38,4 @@ def contact(request):
                 request, "Form not submitted. Please correct any errors")
             return render(request, 'contact.html', {'form': form})
     form = ContactForm()
-    return render(request, "contact/contact.html", {'form': form})
+    return render(request, "contact/contact.html", {'form': form}, {'on_profile_page': True})
