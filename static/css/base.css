@@ -238,3 +238,9 @@ input[name='q']::placeholder {
     border-color: #dc3545;
     border-radius: 0;
 }
+
+/**Braintease section**/
+
+#answer {
+    display: none;
+}

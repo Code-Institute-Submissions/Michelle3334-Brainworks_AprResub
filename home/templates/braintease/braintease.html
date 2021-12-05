@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container p-5">
+    <div class="container header-container">
         <div class="row">
             <div class="col"></div>
         </div>
@@ -17,7 +17,15 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-4"></div>
+        <div class="col-4">
+            <p>I have no voice, yet I speak to you. I tell of all things in the world 
+                that people do.I have leaves, but I am not a tree.I have pages, but 
+                I am not a bride.I have a spine, but I am not a man.I have hinges, 
+                but I am not a door.I have told you all. I cannot tell you more.
+                What am I?</p>
+            <button onclick="toggleButton()" id="answerButton" class="btn btn-black rounded-0">Show Answer</button>
+            <p id="answer">A book!</p>
+        </div>
         <div class="col-4"></div>
         <div class="col-4"></div>
     </div>
@@ -32,4 +40,22 @@
         <div class="col-4"></div>
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+		function toggleButton() {
+            var answer = document.getElementById('answer');
+            var displaySetting = answer.style.display;
+            var answerButton = document.getElementById('answerButton');
+            if (answer.style.display == 'block') {
+                answer.style.display = 'none';
+                answerButton.innerHTML = 'Show answer';
+            } else {
+                answer.style.display = 'block';
+                answerButton.innerHTML = 'Hide answer';
+            }
+        }
+	</script>
 {% endblock %}
