@@ -26,7 +26,7 @@
                     What am I?</p>
             </div>
             <div class="text-center">
-                <button onclick="toggleButton()" id="answerButton" class="btn btn-black rounded-0">Show Answer</button>
+                <button onclick="toggleButton1()" id="answerButton1" class="btn btn-black rounded-0">Show Answer</button>
             </div>
             <div class="text-center mt-3">
                 <p id="answer" class="text-success font-weight-bold">A book!</p>
@@ -40,10 +40,10 @@
                     in the room is a hammer lying in a puddle of water. Can you explain what happened?</p>
             </div>
             <div class="text-center">
-                <button onclick="toggleButton()" id="answerButton" class="btn btn-black rounded-0">Show Answer</button>
+                <button onclick="toggleButton2()" id="answerButton2" class="btn btn-black rounded-0">Show Answer</button>
             </div>
             <div class="text-center mt-3">
-                <p id="answer" class="text-success font-weight-bold">He committed suicide by hanging himself when the ice melted.</p>
+                <p id="answer2" class="text-success font-weight-bold">He committed suicide by hanging himself when the ice melted.</p>
             </div>
         </div>
         <div class="col-4 p-3 ml-2 border border-rounded">
@@ -52,10 +52,10 @@
                     sisters, I have none. But that man’s father is my father’s son.” Who was in the photograph?</p>
             </div>
             <div class="text-center">
-                <button onclick="toggleButton()" id="answerButton" class="btn btn-black rounded-0">Show Answer</button>
+                <button onclick="toggleButton3()" id="answerButton3" class="btn btn-black rounded-0">Show Answer</button>
             </div>
             <div class="text-center mt-3">
-                <p id="answer" class="text-success font-weight-bold">His son.</p>
+                <p id="answer3" class="text-success font-weight-bold">His son.</p>
             </div>
         </div>
     </div>
@@ -75,16 +75,42 @@
 {% block postloadjs %}
     {{ block.super }}
     <script type="text/javascript">
-		function toggleButton() {
-            var answer = document.getElementById('answer');
-            var displaySetting = answer.style.display;
-            var answerButton = document.getElementById('answerButton');
-            if (answer.style.display == 'block') {
-                answer.style.display = 'none';
-                answerButton.innerHTML = 'Show answer';
+		function toggleButton1() {
+            var answer1 = document.getElementById('answer1');
+            var displaySetting = answer1.style.display;
+            var answerButton1 = document.getElementById('answerButton1');
+            if (answer1.style.display == 'block') {
+                answer1.style.display = 'none';
+                answerButton1.innerHTML = 'Show answer';
             } else {
-                answer.style.display = 'block';
-                answerButton.innerHTML = 'Hide answer';
+                answer1.style.display = 'block';
+                answerButton1.innerHTML = 'Hide answer';
+            }
+        }
+
+        function toggleButton2() {
+            var answer2 = document.getElementById('answer2');
+            var displaySetting = answer2.style.display;
+            var answerButton2 = document.getElementById('answerButton2');
+            if (answer2.style.display == 'block') {
+                answer2.style.display = 'none';
+                answerButton2.innerHTML = 'Show answer';
+            } else {
+                answer2.style.display = 'block';
+                answerButton2.innerHTML = 'Hide answer';
+            }
+        }
+
+        function toggleButton3() {
+            var answer3 = document.getElementById('answer3');
+            var displaySetting = answer3.style.display;
+            var answerButton3 = document.getElementById('answerButton3');
+            if (answer3.style.display == 'block') {
+                answer3.style.display = 'none';
+                answerButton3.innerHTML = 'Show answer';
+            } else {
+                answer3.style.display = 'block';
+                answerButton3.innerHTML = 'Hide answer';
             }
         }
 	</script>
