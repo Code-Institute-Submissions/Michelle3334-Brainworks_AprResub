@@ -161,6 +161,7 @@ In the shopping cart the user can view, update or delete items. If they have fin
 
 ### Checkout
 When the user clicks to checkout they can complete their delivery information and select to save it to their profile if logged in. 
+
 <img src="media/checkout.PNG">
 
 ### 404 error page
@@ -288,28 +289,43 @@ Screenshots of the final test are presented below:
 
 ### New user goals
 1. I would like to be able to view the products.
+    * Users can view the products by clicking on the shop icon and selecting from the dropdown.
 2. I would like to view information about individual products.
+    * Users can view information about an individual product by clicking on the product from the products page.
 3. I would like to be able to register for an account.
+    * Users can register by clicking on the My Account icon in the nav bar.
 4. I would like email confirmation after registering for an account.
+    * Users will receive an email confirming and asking them to verify their email address.
 5. I would like to be able to get in contact with the website owner.
+    * Users can get in contact view the Contact us link in the footer on each page, there is also another link on the home page.
 
 ### Returning user goals:
 1. I would like to be able to login or logout.
+    * Users can login or logout from the Account icon in the nav bar.
 2. I would like to be able to recover my lost password.
+    * Users can recover their lost password from a link on the sign in page.
 3. I would like to have a personalised profile to view order history and amend my details.
+    * Users can view their order history or amend details on the Profile page accesible from the Account dropdown.
 4. I would like to be able to sort or filter products.
+    * Users can sort or filter products on the product page.
 5. I would like to be able to search for a product.
+    * Users can search for a product using the search bar at the top of each page in the navigation.
 6. would like to be able to select and adjust a quantity of an item to purchase.
+    * Users can adjust the quantity from the Shopping cart page.
 7. I would like to view the items in my shopping cart.
+    * Users can view items in the shopping cart by clicking on the cart icon in the nav bar.
 8. I would like to view the order confirmation after checking out.
+    * Users can view the order confirmation after checking out, if they are logged in then they can also view their order history from their profile page.
 9. I would like to receive an email confirmation after placing an order.
+    * Users will receive an email confirmation after placing an order.
 
 ### As a website owner:
 1. I would like to be able to add a product to the store.
+    * The website owner can add a product via the store management link under My Account, it is only available to a super user.
 2. I would like to be able to delete a product from the store.
+    * If the website owner is logged in they will find a link under each product in order to delete that product.
 3. I would like to be able to edit a product.
-
-## Bugs
+    * If the website owner is logged in they will find a link under each product in order to edit that product.
 
 
 [Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
