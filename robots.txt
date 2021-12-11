@@ -1,0 +1,3 @@
+User-agents: *
+Disallow: /accounts/
+Sitemap: https://michelle-brainworks.herokuapp.com/sitemap.xml
