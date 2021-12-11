@@ -147,6 +147,7 @@ If users click on an item they can view further details and select to add the it
 
 ### Contact
 The user can contact the website via a link provided in the footer which is accessible on every page. It opens in a separate web page. The user also has an option to sign up to the newsletter.
+When the user first lands on the page there will be a pop up which asks if they would like to sign up to the newsletter. They can close the pop up and continue viewing the site.
 
 <img src="media/contact.PNG">
 
