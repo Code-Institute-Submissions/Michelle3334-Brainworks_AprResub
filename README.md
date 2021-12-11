@@ -15,7 +15,7 @@ The live site can be found <a href="https://michelle-brainworks.herokuapp.com/" 
     * [User stories](https://github.com/Michelle3334/brainworks#user-stories)
     * [Wireframes](https://github.com/Michelle3334/brainworks#wireframes)
     * [Design](https://github.com/Michelle3334/brainworks#design)
-    * [Web Marketing](https://github.com/Michelle3334/brainworks#web-marketing)
+    * [Marketing](https://github.com/Michelle3334/brainworks#marketing)
 2. [Features](https://github.com/Michelle3334/brainworks#features)
 3. [Database Schema](https://github.com/Michelle3334/brainworks#database-schema)
 4. [Technologies Used](https://github.com/Michelle3334/brainworks#technologies-used)
