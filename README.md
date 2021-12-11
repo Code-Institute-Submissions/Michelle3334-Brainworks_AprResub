@@ -135,11 +135,13 @@ Sedgwick+Ave is used for the logo, with Roboto as the main font for all other te
 * Links to other websites have been included on the Home page.
 * Sign up forms have been created which appear as a pop up when the user first loads the website. There is also a link to sign up when sending filling in the contact request form.
 * Facebook and Twitter pages were created.
-    * Facebook page
+
+    **Facebook page**
     <img src="media/fb_1.PNG">
     <img src="media/fb_2.PNG">
 
-    * Twitter page
+
+    **Twitter page**
     <img src="media/twitter.PNG">
 
 
