@@ -259,22 +259,22 @@ My database schema was initially built in excel and then built using the online 
 * The website was viewed on a variety of device sizes such as Desktop, Samsung S10, Samsung tablet and Iphone 11, I also used the responsive function when inspecting the pages to view various sizes. 
 
 ## Performance testing
-I ran the Lighthouse tool to check performance of the website. 
+I ran the Lighthouse tool to check performance of the website. The performance on the products page is as expected for a page with a lot of images to display.
 Screenshots of the final test are presented below:
 * Desktop
     * Home page
     <img src="media/home_lighthouse_desktop.PNG">
     
-    * Shop
-    <img src="#">
+    * Products
+    <img src="media/products_lighthouse_desktop.PNG">
     
 
 * Mobile
     * Home page
-    <img src="#">
+    <img src="media/home_lighthouse_mobile.PNG">
     
-    * Shop
-    <img src="#">
+    * Products
+    <img src="media/products_lighthouse_mobile.PNG">
  
 
 [Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
