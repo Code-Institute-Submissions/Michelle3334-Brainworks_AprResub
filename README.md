@@ -163,6 +163,11 @@ In the shopping cart the user can view, update or delete items. If they have fin
 When the user clicks to checkout they can complete their delivery information and select to save it to their profile if logged in. 
 <img src="media/checkout.PNG">
 
+### 404 error page
+If the user encounters a 404 error they will see a custom page and a link to redirect to the home page.
+
+<img src="media/404.PNG">
+
 
 ## Future features
 * A brainteaser page with fun riddles as well as the option to view the answers to the riddles.
