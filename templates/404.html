@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container p-5">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col text-center mt-5 pt-5">
+            <h1>OH NO! THAT PAGE CAN'T BE FOUND!!!</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p class="fs-4 text-center mb-4">We are experiencing some trouble on our end.</p>
+        </div>
+        <div class="col-12 text-center">
+            <a href="{% url 'home' %}">Return Home</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
