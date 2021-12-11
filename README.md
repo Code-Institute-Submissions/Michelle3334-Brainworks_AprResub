@@ -15,6 +15,7 @@ The live site can be found <a href="https://michelle-brainworks.herokuapp.com/" 
     * [User stories](https://github.com/Michelle3334/brainworks#user-stories)
     * [Wireframes](https://github.com/Michelle3334/brainworks#wireframes)
     * [Design](https://github.com/Michelle3334/brainworks#design)
+    * [Web Marketing](https://github.com/Michelle3334/brainworks#web-marketing)
 2. [Features](https://github.com/Michelle3334/brainworks#features)
 3. [Database Schema](https://github.com/Michelle3334/brainworks#database-schema)
 4. [Technologies Used](https://github.com/Michelle3334/brainworks#technologies-used)
@@ -128,6 +129,20 @@ I used Balsamiq to create the wireframes. The brainteaser section was left out o
 ### Fonts
 Sedgwick+Ave is used for the logo, with Roboto as the main font for all other text. Sans-Serif is used as the backup font. 
 
+
+## Marketing
+* Keywords have been included in the meta keywords in the base.html.
+* Links to other websites have been included on the Home page.
+* Sign up forms have been created which appear as a pop up when the user first loads the website. There is also a link to sign up when sending filling in the contact request form.
+* Facebook and Twitter pages were created.
+    * Facebook page
+    <img src="media/fb_1.PNG">
+    <img src="media/fb_2.PNG">
+
+    * Twitter page
+    <img src="media/twitter.PNG">
+
+
 [Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
 # Features
@@ -172,6 +187,10 @@ If the user encounters a 404 error they will see a custom page and a link to red
 
 <img src="media/404.PNG">
 
+### Privacy
+The website has a privacy policy which is accessible from the footer on every page. When clicked it opens in a new tab.
+
+<img src="media/privacy.PNG">
 
 ## Future features
 * A brainteaser page with fun riddles as well as the option to view the answers to the riddles.
@@ -214,7 +233,10 @@ My database schema was initially built in excel and then built using the online 
 * Google Fonts was used to import fonts.
 ### Font Awesome
 * Font Awesome was used to add icons for design and UX purposes.
-
+### AWS
+* AWS was used to store static and media files.
+### MailChimp
+* MailChimp was used for the contact us form and to subscribe to the newsletter.
 
 [Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
@@ -225,7 +247,6 @@ My database schema was initially built in excel and then built using the online 
 * All links were tested multiple times during the development process and again once the project was completed to ensure that all pages were linked correctly.
 * All Forms and form elements were tested to ensure that they work as they should, with user feedback on errors as well as user feedback on successful submission.
 * Tested every functionality like Stripe, add/edit/delete products, contact, check out, and confirmation email with no errors found.
-
 
 ## Code Validation
 **1. CSS Validation using <a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank" rel="noopener">W3C CSS Validator Services</a>.**
