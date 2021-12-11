@@ -371,34 +371,7 @@ All Static and media files for the deployed version of the site are hosted in a 
 1. In the gitpod terminal, install boto3 and django-storages using the following commands: <code>pip3 install boto3</code> and <code>pip3 install django-storages</code>,
 2. Freeze the new requirements into the 'requirements.txt' file using the <code>pip3 freeze > requirements.txt</code> command.
 3. Add 'storages' to INSTALLED_APPS in settings.py.
-4. Add the following code to settings.py in order to link the AWS bucket to the website:
-
-<code>
-if 'USE_AWS' in os.environ:
-    # Cache control
-    AWS_S3_OBJECT_PARAMETERS = {
-        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
-        'CacheControl': 'max-age=94608000',
-    }
-
-    # Bucket Config
-    AWS_STORAGE_BUCKET_NAME = 'milestone-project-04'
-    AWS_S3_REGION_NAME = 'eu-west-1'
-    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
-
-    # Static and media files
-    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-    STATICFILES_LOCATION = 'static'
-    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-    MEDIAFILES_LOCATION = 'media'
-
-    # Override static and media URLs in production
-    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
-    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-</code>
-
+4. Add code to settings.py in order to link the AWS bucket to the website.
 5. Create a custom_storages.py file in the root level of the project. Inside it, include the locations of the Static Storage and Media Storage.
 6. Delete DISABLE_COLLECTSTATIC from the Heroku Config Variables.
 7. Finally, push to GitHub, and all changes should be automatically pushed to Heroku too.
@@ -407,7 +380,7 @@ if 'USE_AWS' in os.environ:
 
 # Credits
 ## Code
-* I followed the course content modules while writing the code for the cart functionality, Stripe and Webhooks.
+* I followed the course content modules for Boutique Ado while writing the code for the cart functionality, Stripe and Webhooks.
 
 ## Content
 * All product information and images was sourced from:
