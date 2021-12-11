@@ -1,13 +1,13 @@
 # Brainworks
 
 ## Project 5 - E-Commerce Applications
-<img src="#">
+<img src="media/responsive.PNG">
 
 The aim of this project was to build a Full-Stack site based on business logic used to control a centrally-owned dataset. This includes setting up an authentication mechanism and providing the ability to make purchases.
 
-Brainworks sells brain teaser puzzles and books games to the general public. They cater for all age groups and have a wide variety to choose from. There is also a fun brainteaser section for users to test their brain powe
+Brainworks sells brain teaser puzzles and books games to the general public. They cater for all age groups and have a wide variety to choose from.
 
-The live site can be found <a href="" target="_blank" rel="noopener">here</a>. (Note: Right click on link to open a new tab).
+The live site can be found <a href="https://michelle-brainworks.herokuapp.com/" target="_blank" rel="noopener">here</a>. (Note: Right click on link to open a new tab).
 
 # Table of Contents
 1. [UX](https://github.com/Michelle3334/brainworks#ux)
@@ -123,11 +123,6 @@ I used Balsamiq to create the wireframes.
 [Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
 ## Design
-### Colors
-The main colors used in this project:
-* Background color: 
-* Font color: 
-
 ### Fonts
 Sedgwick+Ave is used for the logo, with Roboto as the main font for all other text. Sans-Serif is used as the backup font. 
 
@@ -136,34 +131,49 @@ Sedgwick+Ave is used for the logo, with Roboto as the main font for all other te
 # Features
 ## Existing Features
 ### Navigation Bar
-   
+The navigation bar has links to the shop, account and shopping cart. If clicked, the logo takes the user back to the home page.
+<img src="media/nav_bar.PNG">  
     
 ### Products
-   
+The user can get to the products section by clicking on the shop icon on the nav bar, they can either select to view all products or select a category.
 
+<img src="media/shop.PNG">
+<img src="media/products.PNG">
 
+### Item view
+If users click on an item they can view further details and select to add the item to the shopping cart.
+
+<img src="media/item.PNG">
 
 ### Contact
-   * This page invites the user to submit comments or suggestions to help improve the website.
-   * On submission of the form the user is provided with a confirmation message.
-   * The information provided is sent to an active gmail account. 
+The user can contact the website via a link provided in the footer which is accessible on every page. It opens in a separate web page. The user also has an option to sign up to the newsletter.
 
+<img src="media/contact.PNG">
 
 ### Profile page
-    
-* If the user is logged in they are able to view and update their profile as well as view their order history.
+If the user is logged in they are able to view and update their profile information as well as view their order history.
+
+<img src="media/profile.PNG">
+
+### Shopping cart
+In the shopping cart the user can view, update or delete items. If they have finished selecting items to purchase they can go to the secure checkout section.
+<img src="media/cart.PNG">
+
+### Checkout
+When the user clicks to check 
+<img src="media/checkout.PNG">
 
 
 ## Future features
-* 
+* A brainteaser page with fun riddles as well as the option to view the answers to the riddles.
 
 [Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
 # Database Schema
 
 ### DBM flow
-
-<img src="">
+My database schema was initially built in excel and then built using the online tool dbdiagram.io. The schema is as follows:
+<img src="media/dbm_flow.PNG">
 
 ### User Profile model
 * Django's user and admin model was utilised, with some modifications for the user profile display and update.
