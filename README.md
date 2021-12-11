@@ -56,7 +56,7 @@ I would like to be able to select and adjust a quantity of an item to purchase.
 [Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
 ## Wireframes
-I used Balsamiq to create the wireframes.
+I used Balsamiq to create the wireframes. The brainteaser section was left out of the final website due to time constraints. There are some minor changes made to the layout during the development process.
 
 ### Desktop view
 * Home page 
@@ -160,7 +160,7 @@ In the shopping cart the user can view, update or delete items. If they have fin
 <img src="media/cart.PNG">
 
 ### Checkout
-When the user clicks to check 
+When the user clicks to checkout they can complete their delivery information and select to save it to their profile if logged in. 
 <img src="media/checkout.PNG">
 
 
@@ -246,16 +246,11 @@ My database schema was initially built in excel and then built using the online 
 ## Code Validation
 **1. CSS Validation using <a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank" rel="noopener">W3C CSS Validator Services</a>.**
 
-
-<img src="#">
+<img src="media/css_valid.PNG">
 
 **2. <a href="http://pep8online.com/">PEP8</a> was used to test the Python code**
 
-
-
 **3. <a href="https://beautifytools.com/javascript-validator.php">Beautify Tools</a> was used to test the Javascript snippets.**
-
-
 
 [Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
@@ -268,23 +263,19 @@ I ran the Lighthouse tool to check performance of the website.
 Screenshots of the final test are presented below:
 * Desktop
     * Home page
+    <img src="media/home_lighthouse_desktop.PNG">
+    
+    * Shop
     <img src="#">
     
-    * Gallery
-    <img src="#">
-    
-    * About page
-    <img src="#">
 
 * Mobile
     * Home page
     <img src="#">
     
-    * Gallery
+    * Shop
     <img src="#">
-    
-    * About page
-    <img src="#">
+ 
 
 [Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
