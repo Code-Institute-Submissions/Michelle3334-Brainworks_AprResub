@@ -220,38 +220,12 @@ My database schema was initially built in excel and then built using the online 
 
 # Testing
 ## Functionality Testing
-### Manual testing
 * I used Google Chrome developer tools throughout the development process for testing and solving problems with style and display issues.
 * I used Github Project and Issues to track tasks. After each task completion, I would fully test it before moving on to the next task.
 * All links were tested multiple times during the development process and again once the project was completed to ensure that all pages were linked correctly.
 * All Forms and form elements were tested to ensure that they work as they should, with user feedback on errors as well as user feedback on successful submission.
 * Tested every functionality like Stripe, add/edit/delete products, contact, check out, and confirmation email with no errors found.
 
-### Django testing framework
-
-* Some of the view, models and forms were tested using the unit testing functionality in Django, these tests can be viewed in the <code>test_forms.py</code>, <code>test_views.py</code> and <code>test_models.py</code> files in the various apps. The remainder were tested manually during the functional testing both during development and after completion.
-
-    <img src="#">
-    
-* **Home app**
-
-    <img src="#">
-
-* **Products app**
-
-    <img src="#">
-
-* **Cart app**
-
-    <img src="#">
-
-* **Checkout app**
-
-    <img src="#">
-
-* **Profiles app**
-
-    <img src="#">
 
 ## Code Validation
 **1. CSS Validation using <a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank" rel="noopener">W3C CSS Validator Services</a>.**
