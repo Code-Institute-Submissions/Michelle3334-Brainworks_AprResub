@@ -31,11 +31,13 @@ The live site can be found <a href="https://michelle-brainworks.herokuapp.com/" 
 
 # UX
 ## Website owner business goals
+Website owner goals were tracked using github projects kanban board.
 * I would like to be able to add a product to the store.
 * I would like to be able to delete a product from the store.
 * I would like to be able to edit a product.
 
 ## User Stories
+User story goals were tracked using github projects kanban board.
 ### New user goals:
 * I would like to be able to view a list of products.
 * I would like to view information about individual products.
@@ -48,7 +50,7 @@ The live site can be found <a href="https://michelle-brainworks.herokuapp.com/" 
 * I would like to have a personalised profile to view order history and amend my details.
 * I would like to be able to sort or filter products.
 * I would like to be able to search for a product.
-I would like to be able to select and adjust a quantity of an item to purchase.
+* I would like to be able to select and adjust a quantity of an item to purchase.
 * I would like to view the items in my shopping cart.
 * I would like to view the order confirmation after checking out.
 * I would like to receive an email confirmation after placing an order.
@@ -223,10 +225,11 @@ My database schema was initially built in excel and then built using the online 
 * I used Github Project and Issues to track tasks. After each task completion, I would fully test it before moving on to the next task.
 * All links were tested multiple times during the development process and again once the project was completed to ensure that all pages were linked correctly.
 * All Forms and form elements were tested to ensure that they work as they should, with user feedback on errors as well as user feedback on successful submission.
+* Tested every functionality like Stripe, add/edit/delete products, contact, check out, and confirmation email with no errors found.
 
 ### Django testing framework
 
-* The majority of the view, models and forms were tested using the unit testing functionality in Django, these tests can be viewed in the <code>test_forms.py</code>, <code>test_views.py</code> and <code>test_models.py</code> files in the various apps. The remainder were tested manually during the functional testing both during development and after completion.
+* Some of the view, models and forms were tested using the unit testing functionality in Django, these tests can be viewed in the <code>test_forms.py</code>, <code>test_views.py</code> and <code>test_models.py</code> files in the various apps. The remainder were tested manually during the functional testing both during development and after completion.
 
     <img src="#">
     
