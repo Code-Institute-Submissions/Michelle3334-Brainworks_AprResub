@@ -235,6 +235,8 @@ My database schema was initially built in excel and then built using the online 
 * Google Fonts was used to import fonts.
 ### Font Awesome
 * Font Awesome was used to add icons for design and UX purposes.
+### Stripe
+* Stripe was used for payment and authentication.
 ### AWS
 * AWS was used to store static and media files.
 ### MailChimp
