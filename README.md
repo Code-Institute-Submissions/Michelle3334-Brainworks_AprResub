@@ -252,6 +252,24 @@ My database schema was initially built in excel and then built using the online 
 * All Forms and form elements were tested to ensure that they work as they should, with user feedback on errors as well as user feedback on successful submission.
 * Tested every functionality like Stripe, add/edit/delete products, contact, check out, and confirmation email with no errors found.
 
+Manual Unit testing summary is as follows (this is not an exhaustive list of all the tests performed during development but a simple summary of the basic tests):
+
+| Test        | Expected | Outcome  |
+| ------------- |------------| ---------|
+| Information and error messages | User receives error or information messages when logging in, logging out, adding item to cart, editing or removing item and when submitting forms | Passed |
+| User login, register and login | User can register, login or logout and all pages display without error | Passed | 
+| User register | User registers and receives an email to verify their email address | Passed |
+| Cart view | Test the cart view page loads successfully and displays items added to cart | Passed |
+| Edit Cart | User can increase or decrease amount of item | Passed |
+| Remove item from Cart | User can delete an item from cart and cart updates, if no items in cart then appropriate message displays on the screen | Passed |
+| Checkout success | Test successful checkout and confirmation message | Passed |
+| Checkout update info | Test info updated if user logged in and checkbox ticked | Passed |
+| Invalid information in payment form | User receives an error message with detail of error | Passed |
+| Links open in new tab | All links open in a new tab so user does not have to use the back button on the browser | Passed |
+| Super user | Product management link under Account (to add a new product) only viewed when super user logged in, edit and delete links for existing products only display for super user | Passed |
+| Search bar | User can freetype in search bar and the relevant entries display, if no input is made then error message displays | Passed |
+
+
 ## Code Validation
 **1. CSS Validation using <a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank" rel="noopener">W3C CSS Validator Services</a>.**
 
