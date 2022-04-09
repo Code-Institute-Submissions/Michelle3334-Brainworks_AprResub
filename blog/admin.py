@@ -6,6 +6,7 @@ from .models import BlogPost, Comment
 class BlogPostAdmin(admin.ModelAdmin):
     "BlogPost admin"
     list_display = (
+        'image',
         'title',
         'author',
         'date_authored',

@@ -10,6 +10,7 @@ class BlogPost(models.Model):
         UserProfile, on_delete=models.DO_NOTHING, related_name='blog')
     date_authored = models.DateTimeField(auto_now=True)
     text = models.TextField()
+    image = models.ImageField(null=True, blank=True)
 
     class Meta:
         ordering = ['-date_authored']
