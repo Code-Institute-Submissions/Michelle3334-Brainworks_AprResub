@@ -1,5 +1,6 @@
 "Blog Admin"
 from django.contrib import admin
+from django_summernote.admin import SummernoteModelAdmin
 from .models import BlogPost, Comment
 
 
@@ -12,6 +13,7 @@ class BlogPostAdmin(admin.ModelAdmin):
         'date_authored',
         'text',
         )
+    summernote_fields = ('text')
 
 
 class CommentAdmin(admin.ModelAdmin):
