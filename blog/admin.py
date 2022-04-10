@@ -1,10 +1,10 @@
 "Blog Admin"
 from django.contrib import admin
-from .models import BlogPost, Comment
+from .models import Blog, Comment
 
 
-class BlogPostAdmin(admin.ModelAdmin):
-    "BlogPost admin"
+class BlogAdmin(admin.ModelAdmin):
+    "Blog admin"
     list_display = (
         'title',
         'author',
@@ -19,11 +19,11 @@ class BlogPostAdmin(admin.ModelAdmin):
 class CommentAdmin(admin.ModelAdmin):
     "Comment Admin"
     list_display = (
-        'blogpost', 
+        'blog', 
         'author', 
         'text', 
         'date_created',
         )
 
-admin.site.register(BlogPost, BlogPostAdmin)
+admin.site.register(Blog, BlogAdmin)
 admin.site.register(Comment, CommentAdmin)

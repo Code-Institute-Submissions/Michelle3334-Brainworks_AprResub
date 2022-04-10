@@ -3,8 +3,8 @@ from django.db import models
 from profiles.models import UserProfile
 
 
-class BlogPost(models.Model):
-    "Blog post model"
+class Blog(models.Model):
+    "Blog model"
     title = models.CharField(max_length=200, unique=True)
     author = models.ForeignKey(
         UserProfile, on_delete=models.DO_NOTHING, related_name='blog')
@@ -21,8 +21,8 @@ class BlogPost(models.Model):
 
 class Comment(models.Model):
     "Blog comment model"
-    blogpost = models.ForeignKey(
-        BlogPost, on_delete=models.CASCADE, related_name='comment')
+    blog = models.ForeignKey(
+        Blog, on_delete=models.CASCADE, related_name='comment')
     author = models.ForeignKey(UserProfile, on_delete=models.DO_NOTHING)
     text = models.TextField()
     date_created = models.DateTimeField(auto_now_add=True)

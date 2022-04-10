@@ -13,18 +13,18 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-5 mt-xl-5 mt-lg-1">
-                <h2 class="logo-font">Blog Posts</h2>
+                <h2 class="logo-font">Our Blog</h2>
                 <hr>
             </div>
         </div>
         <div class="row">
             <p>Test</p>
-            {% for blogpost in blogposts %}
+            {% for blog in blogs %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <div class="card h-100 border-0">
-                        <img class="card-img-top img-fluid" src="{{ blogpost.image }}" alt="{{ blogpost.title }}">
+                        <img class="card-img-top img-fluid" src="{{ blog.image }}" alt="{{ blog.title }}">
                         <div class="card-body pb-0">
-                            <p class="mb-0">{{ blogpost.title }}</p>
+                            <p class="mb-0">{{ blog.title }}</p>
                         </div>
                     </div>
                 </div>
