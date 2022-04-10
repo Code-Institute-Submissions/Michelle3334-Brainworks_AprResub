@@ -30,9 +30,8 @@
                 <h5>Comments:</h5>
                 {% for comment in comments %}
                 <div>
-                    <p>{{ comment.text }}</p>
-                    <p>{{ comment.author }}</p>
-                    <p><small>{{ comment.date_created }}</small></p>
+                    <p class="mb-0">{{ comment.text }}</p>
+                    <p><small>{{ comment.author }} | {{ comment.date_created }}</small></p>
                 </div>
                 {% endfor %}
             </div>
