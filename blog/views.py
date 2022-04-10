@@ -7,4 +7,8 @@ def all_blogs(request):
     """ A view to return the blog list page"""
     blogs = Blog.objects.all()
 
-    return render(request, 'blog/blog_post.html')
+    context = {
+        'blogs': blogs,
+    }
+
+    return render(request, 'blog/blog_post.html', context)
