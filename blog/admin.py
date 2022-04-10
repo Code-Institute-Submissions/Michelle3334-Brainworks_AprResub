@@ -1,11 +1,9 @@
 "Blog Admin"
 from django.contrib import admin
-from django_summernote.admin import SummernoteModelAdmin
 from .models import BlogPost, Comment
 
 
-@admin.register(BlogPost)
-class BlogPostAdmin(SummernoteModelAdmin):
+class BlogPostAdmin(admin.ModelAdmin):
     "BlogPost admin"
     list_display = (
         'image',
@@ -14,11 +12,9 @@ class BlogPostAdmin(SummernoteModelAdmin):
         'date_authored',
         'text',
         )
-    summernote_fields = ('text')
 
 
-@admin.register(Comment)
-class CommentAdmin(SummernoteModelAdmin):
+class CommentAdmin(admin.ModelAdmin):
     "Comment Admin"
     list_display = (
         'blogpost', 
@@ -26,4 +22,6 @@ class CommentAdmin(SummernoteModelAdmin):
         'text', 
         'date_created',
         )
-    summernote_fields = ('text')
+
+admin.site.register(BlogPost, BlogPostAdmin)
+admin.site.register(Comment, CommentAdmin)
