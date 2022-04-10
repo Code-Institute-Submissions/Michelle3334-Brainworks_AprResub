@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-5 mt-xl-5 mt-lg-1">
+                <h2 class="logo-font">{{ blog.title }}</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-12">
+                    <div class="">
+                        <p>{{ blog.text }}</p>
+                        <p class="mb-0"><small>{{ blog.date_authored }}</small></p>
+                    </div>
+                </div>
+        </div>            
+    </div>
+{% endblock %}
