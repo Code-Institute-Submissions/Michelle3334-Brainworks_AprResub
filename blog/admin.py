@@ -4,6 +4,7 @@ from django_summernote.admin import SummernoteModelAdmin
 from .models import BlogPost, Comment
 
 
+@admin.register(BlogPost)
 class BlogPostAdmin(SummernoteModelAdmin):
     "BlogPost admin"
     list_display = (
@@ -16,6 +17,7 @@ class BlogPostAdmin(SummernoteModelAdmin):
     summernote_fields = ('text')
 
 
+@admin.register(Comment)
 class CommentAdmin(SummernoteModelAdmin):
     "Comment Admin"
     list_display = (
@@ -25,7 +27,3 @@ class CommentAdmin(SummernoteModelAdmin):
         'date_created',
         )
     summernote_fields = ('text')
-
-
-admin.site.register(BlogPost, BlogPostAdmin)
-admin.site.register(Comment, CommentAdmin)
