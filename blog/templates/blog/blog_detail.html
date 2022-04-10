@@ -17,13 +17,25 @@
                 <hr>
             </div>
         </div>
-        <div class="row mb-5">
-                <div class="col-12 mb-5">
-                    <div class="mb-5">
-                        <p>{{ blog.text }}</p>
-                        <p class="mb-0"><small>{{ blog.date_authored }}</small></p>
-                    </div>
+        <div class="row mb-1">
+            <div class="col-12">
+                <div class="">
+                    <p>{{ blog.text }}</p>
+                    <p class="mb-0"><small>{{ blog.date_authored }}</small></p>
                 </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-12 mb-5">
+                <h5>Comments:</h5>
+                {% for comment in comments %}
+                <div>
+                    <p>{{ comment.text }}</p>
+                    <p>{{ comment.author }}</p>
+                    <p><small>{{ comment.date_created }}</small></p>
+                </div>
+                {% endfor %}
+            </div>
         </div>            
     </div>
 {% endblock %}
