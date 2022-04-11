@@ -10,14 +10,12 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
+    <div class="container-fluid mb-5 pb-2">
         <div class="row">
             <div class="col text-center mt-5 mt-xl-5 mt-lg-1">
                 <h2 class="logo-font">{{ blog.title }}</h2>
                 <hr>
             </div>
-        </div>
-        <div class="row mb-1">
             <div class="col-12">
                 <div class="mx-5">
                     <p>{{ blog.text | linebreaks }}</p>
@@ -25,9 +23,7 @@
                     <hr>
                 </div>
             </div>
-        </div>
-        {% if user.is_authenticated %}
-        <div class="row">
+            {% if user.is_authenticated %}
             <div class="col-12 col-lg-6 mx-5">
                 <h6>Leave a comment here:</h6>
                 <p><small>Posting as: {{ user.username }}</small></p>
@@ -37,15 +33,11 @@
                     <button type="submit" class="btn btn-black rounded-0 text-uppercase float-right">Submit</button>
                 </form>
             </div>
-        </div>
-        {% else %}
-        <div class="row">
+            {% else %}
             <div class="col-12 mx-5">
                 <h6><small>Please <a href="{% url 'account_login' %}">log in</a> to leave a comment</small></h6>
             </div>
-        </div>
-        {% endif %}
-        <div class="row mb-5">
+            {% endif %}
             <div class="col-12 mb-5 mx-5">
                 <h6>Comments:</h6>
                 {% if not blog.comment.all %}
