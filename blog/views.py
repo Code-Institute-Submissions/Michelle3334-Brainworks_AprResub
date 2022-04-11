@@ -18,23 +18,27 @@ def all_blogs(request):
 
 def blog_detail(request, blog_id):
     """ A view to show blog details """
-
     blog = get_object_or_404(Blog, pk=blog_id)
     comments = blog.comment.order_by('date_created')
-    comment = get_object_or_404(Comment)
+    new_comment = None
 
     if request.method == 'POST':
-        form = CommentForm(request.POST, instance=comment)
+        form = CommentForm(data=request.POST)
         if form.is_valid():
-            form.save()
+            new_comment = form.save(commit=False)
+            new_comment.blog = blog
+            new_comment.author = request.user.username
+            new_comment.save()
             messages.success(request, 'Comment added')
         else:
+            form = CommentForm()
             messages.error(request, 'Failed to add comment')
  
     context = {
         'blog': blog,
         'comments': comments,
-        'comment_form': CommentForm(),
+        'new_comment': new_comment,
+        'form': CommentForm(),
     }
 
     return render(request, 'blog/blog_detail.html', context)

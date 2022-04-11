@@ -7,7 +7,7 @@ class Blog(models.Model):
     "Blog model"
     title = models.CharField(max_length=200, unique=True)
     author = models.ForeignKey(
-        UserProfile, on_delete=models.DO_NOTHING, related_name='blog')
+        UserProfile, on_delete=models.CASCADE, related_name='blog')
     date_authored = models.DateTimeField(auto_now=True)
     text = models.TextField()
     image = models.ImageField(null=True, blank=True)
