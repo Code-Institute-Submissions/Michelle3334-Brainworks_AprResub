@@ -36,6 +36,7 @@ Website owner goals were tracked using github projects kanban board.
 * I would like to be able to add a product to the store.
 * I would like to be able to delete a product from the store.
 * I would like to be able to edit a product.
+* I would like to be able to add a blog to captivate and interest visitors. 
 
 ## User Stories
 User story goals were tracked using github projects kanban board.
@@ -45,6 +46,8 @@ User story goals were tracked using github projects kanban board.
 * I would like to be able to register for an account.
 * I would like email confirmation after registering for an account.
 * I would like to be able to get in contact with the website owner.
+* I would like to be able to view a list of blogs to choose which one I would like to read more about.
+* I would like to be able to view the comments made on the blogs by other users.
 ### Returning user goals:
 * I would like to be able to login or logout.
 * I would like to be able to recover my lost password.
@@ -55,6 +58,7 @@ User story goals were tracked using github projects kanban board.
 * I would like to view the items in my shopping cart.
 * I would like to view the order confirmation after checking out.
 * I would like to receive an email confirmation after placing an order.
+* I would like to be able to view individual blogs and add comments.
 
 [Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
@@ -150,8 +154,8 @@ Sedgwick+Ave is used for the logo, with Roboto as the main font for all other te
 # Features
 ## Existing Features
 ### Navigation Bar
-The navigation bar has links to the shop, account and shopping cart. If clicked, the logo takes the user back to the home page.
-<img src="media/nav_bar.PNG">  
+The navigation bar has links to the shop, account, shopping cart and blog posts. If clicked, the logo takes the user back to the home page.
+<img src="media/nav_bar.png">  
     
 ### Products
 The user can get to the products section by clicking on the shop icon on the nav bar, they can either select to view all products or select a category.
@@ -184,6 +188,10 @@ When the user clicks to checkout they can complete their delivery information an
 
 <img src="media/checkout.PNG">
 
+### Blog
+The user can view all the blogs that have are available for viewing. If they click on an individual blog they can read the full article and view any comments that have been made.
+Only logged in users are able to add new comments.
+
 ### 404 error page
 If the user encounters a 404 error they will see a custom page and a link to redirect to the home page.
 
@@ -203,7 +211,7 @@ The website has a privacy policy which is accessible from the footer on every pa
 
 ### DBM flow
 My database schema was initially built in excel and then built using the online tool dbdiagram.io. The schema is as follows:
-<img src="media/dbm_flow.PNG">
+<img src="media/DBM.PNG">
 
 ### User Profile model
 * Django's user and admin model was utilised, with some modifications for the user profile display and update.
@@ -217,6 +225,9 @@ My database schema was initially built in excel and then built using the online 
 <img src="media/dbm_order.PNG">
 <img src="media/dbm_items.PNG">
 
+### Blog app
+<img src="media/blog_post.png">
+<img src="media/blog_comment.png">
 
 # Technologies Used:
 ### Programming Languages:
@@ -268,6 +279,7 @@ Manual Unit testing summary is as follows (this is not an exhaustive list of all
 | Links open in new tab | All links open in a new tab so user does not have to use the back button on the browser | Passed |
 | Super user | Product management link under Account (to add a new product) only viewed when super user logged in, edit and delete links for existing products only display for super user | Passed |
 | Search bar | User can freetype in search bar and the relevant entries display, if no input is made then error message displays | Passed |
+| Add comment | Logged in User can type a comment on a blog and on submit it adds the comment to the list of comments | Passed |
 
 
 ## Code Validation
@@ -319,6 +331,10 @@ Screenshots of the final test are presented below:
     * Users will receive an email confirming and asking them to verify their email address.
 5. I would like to be able to get in contact with the website owner.
     * Users can get in contact view the Contact us link in the footer on each page, there is also another link on the home page.
+6. I would like to view a list of the blogs.
+    * Users can click on the link in the nav bar and view all the blogs.
+7. I would like to view comments made by users on the blog.
+    * The user can view comments on a blog if they click on the individual blog and scroll to the bottom of the article.
 
 ### Returning user goals:
 1. I would like to be able to login or logout.
@@ -339,6 +355,8 @@ Screenshots of the final test are presented below:
     * Users can view the order confirmation after checking out, if they are logged in then they can also view their order history from their profile page.
 9. I would like to receive an email confirmation after placing an order.
     * Users will receive an email confirmation after placing an order.
+10. I would like to be able to view and add comments.
+    * A logged in user can both view and add new comments to a blog.
 
 ### As a website owner:
 1. I would like to be able to add a product to the store.
@@ -347,6 +365,8 @@ Screenshots of the final test are presented below:
     * If the website owner is logged in they will find a link under each product in order to delete that product.
 3. I would like to be able to edit a product.
     * If the website owner is logged in they will find a link under each product in order to edit that product.
+4. I would like to be able to add a blog.
+    * The site owner can add a blog via the django admin module.
 
 
 [Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
@@ -430,10 +450,12 @@ All Static and media files for the deployed version of the site are hosted in a 
     * <a href="https://ebay.com/">E-Bay</a>
     * <a href="https://walmart.com/">Walmart</a>
     * <a href="https://www.etsy.com/">Etsy</a>
+* The information for the blogs was sourced from:
+    * <a href="https://info.thinkfun.com/stem-education?src=HPicon">Think Fun</a>
     
 
 ## Media
-The hero image on the home pages was sourced from:
+The hero image on the home pages and images for the blogs were sourced from:
 * <a href="https://pixabay.com/">Pixabay</a>
 
 ## Acknowledgements
