@@ -21,13 +21,14 @@ def blog_detail(request, blog_id):
     blog = get_object_or_404(Blog, pk=blog_id)
     comments = blog.comment.order_by('date_created')
     new_comment = None
+    
 
     if request.method == 'POST':
         form = CommentForm(data=request.POST)
         if form.is_valid():
             new_comment = form.save(commit=False)
             new_comment.blog = blog
-            new_comment.author = request.user.username
+            new_comment.author = request.user.userprofile
             new_comment.save()
             messages.success(request, 'Comment added')
         else:
@@ -38,7 +39,7 @@ def blog_detail(request, blog_id):
         'blog': blog,
         'comments': comments,
         'new_comment': new_comment,
-        'form': CommentForm(),
+        'comment_form': CommentForm(),
     }
 
     return render(request, 'blog/blog_detail.html', context)
