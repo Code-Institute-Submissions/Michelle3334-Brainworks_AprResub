@@ -25,9 +25,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row mb-5 pb-2">
+            <div class="row">
+                {% if user.is_authenticated %}    
                 <div class="col-8 mx-5">
-                    {% if user.is_authenticated %}
                     <h6>Leave a comment here:</h6>
                     <p><small>Posting as: {{ user.username }}</small></p>
                     <form method="POST">
@@ -35,13 +35,13 @@
                         {% csrf_token %}
                         <button type="submit" class="btn btn-black rounded-0 text-uppercase float-right">Submit</button>
                     </form>
-                    {% else %}
-                    <h6><small>Please <a href="{% url 'account_login' %}">log in</a> to leave a comment</small></h6>
-                    {% endif %}
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-8 mb-5 mx-5">
+                {% else %}
+                <div class="col-8 mx-5">
+                    <h6><small>Please <a href="{% url 'account_login' %}">log in</a> to leave a comment</small></h6>
+                </div>
+                {% endif %}
+                <div class="col-12 mb-5 pb-2mx-5">
                     <h6>Comments:</h6>
                     {% if not blog.comment.all %}
                         <p><small>No comments have been added yet</small></p>
