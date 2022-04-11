@@ -1,6 +1,7 @@
 "Blog app views"
 from django.shortcuts import render, get_object_or_404
 from .models import Blog, Comment
+from .forms import CommentForm
 
 
 def all_blogs(request):
@@ -23,6 +24,7 @@ def blog_detail(request, blog_id):
     context = {
         'blog': blog,
         'comments': comments,
+        'comment_form': CommentForm(),
     }
 
     return render(request, 'blog/blog_detail.html', context)

@@ -20,13 +20,13 @@
         <div class="row mb-1">
             <div class="col-12">
                 <div class="">
-                    <p>{{ blog.text }}</p>
+                    <p>{{ blog.text | linebreaks }}</p>
                     <p class="mb-0"><small>{{ blog.date_authored }}</small></p>
                 </div>
             </div>
         </div>
-        <div class="row mb-5">
-            <div class="col-12 mb-5">
+        <div class="row mb-1">
+            <div class="col-12 mb-1">
                 <h5>Comments:</h5>
                 {% for comment in comments %}
                 <div>
@@ -35,6 +35,19 @@
                 </div>
                 {% endfor %}
             </div>
-        </div>            
+        </div>
+        {% if user.is_authenticated %}
+        <div class="row mb-5">
+            <div class="col-12 mb-5">
+                <h5>Leave a comment here:</h5>
+                <p>Posting as: {{ user.username }}</p>
+                <form method="post">
+                    {{ comment_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-black rounded-0 text-uppercase float-right mb-5">Submit</button>
+                </form>
+            </div>
+        </div>
+        {% endif %}      
     </div>
 {% endblock %}
