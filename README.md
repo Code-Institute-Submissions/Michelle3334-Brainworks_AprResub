@@ -200,6 +200,10 @@ When the user clicks to checkout they can complete their delivery information an
 The user can view all the blogs that have are available for viewing. If they click on an individual blog they can read the full article and view any comments that have been made.
 Only logged in users are able to add new comments.
 
+<img src="media/blog_post_page.png">
+<img src="media/blog_detail.png">
+<img src="media/log_in_comment.png">
+
 ### 404 error page
 If the user encounters a 404 error they will see a custom page and a link to redirect to the home page.
 
