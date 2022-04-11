@@ -211,7 +211,7 @@ The website has a privacy policy which is accessible from the footer on every pa
 
 ### DBM flow
 My database schema was initially built in excel and then built using the online tool dbdiagram.io. The schema is as follows:
-<img src="media/DBM.PNG">
+<img src="media/DBM.png">
 
 ### User Profile model
 * Django's user and admin model was utilised, with some modifications for the user profile display and update.
