@@ -1,5 +1,6 @@
 "Blog app views"
 from django.shortcuts import render, get_object_or_404
+from django.contrib import messages
 from .models import Blog, Comment
 from .forms import CommentForm
 
@@ -20,7 +21,16 @@ def blog_detail(request, blog_id):
 
     blog = get_object_or_404(Blog, pk=blog_id)
     comments = blog.comment.order_by('date_created')
+    comment = get_object_or_404(Comment)
 
+    if request.method == 'POST':
+        form = CommentForm(request.POST, instance=comment)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Comment added')
+        else:
+            messages.error(request, 'Failed to add comment')
+ 
     context = {
         'blog': blog,
         'comments': comments,
