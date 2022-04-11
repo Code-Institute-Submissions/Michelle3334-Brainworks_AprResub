@@ -19,7 +19,7 @@ def all_blogs(request):
 def blog_detail(request, blog_id):
     """ A view to show blog details """
     blog = get_object_or_404(Blog, pk=blog_id)
-    comments = blog.comment.order_by('date_created')
+    comments = blog.comment.order_by('-date_created')
     new_comment = None
     
 
