@@ -26,22 +26,6 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 mx-5">
-                <h5>Comments:</h5>
-                {% if not blog.comment.all %}
-                    <p>No comments have been added yet</p>
-                {% else %}    
-                    {% for comment in comments %}
-                    <div>
-                        <p class="mb-0">{{ comment.text }}</p>
-                        <p><small>Added by: {{ comment.author }} | {{ comment.date_created }}</small></p>
-                        <hr>
-                    </div>
-                    {% endfor %}
-                {% endif %}
-            </div>
-        </div>
         {% if user.is_authenticated %}
         <div class="row">
             <div class="col-12 mx-5">
@@ -60,6 +44,22 @@
                 <h6>Please <a href="{% url 'account_login' %}">log in</a> to leave a comment</h6>
             </div>
         </div>
-        {% endif %}      
+        {% endif %}
+        <div class="row">
+            <div class="col-12 mx-5">
+                <h5>Comments:</h5>
+                {% if not blog.comment.all %}
+                    <p>No comments have been added yet</p>
+                {% else %}    
+                    {% for comment in comments %}
+                    <div>
+                        <p class="mb-0">{{ comment.text }}</p>
+                        <p><small>Added by: {{ comment.author }} | {{ comment.date_created }}</small></p>
+                        <hr>
+                    </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
     </div>
 {% endblock %}
