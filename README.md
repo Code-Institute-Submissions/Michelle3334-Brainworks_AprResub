@@ -96,6 +96,10 @@ I used Balsamiq to create the wireframes. The brainteaser section was left out o
 * Checkout
 <img src="media/checkout_desktop.PNG">
 
+* Blog
+<img src="media/blog_wireframe.png">
+<img src="media/blog_detail_wireframe.png">
+
 ### Mobile view
 * Home page
 <img src="media/home_mobile.PNG">
@@ -126,6 +130,10 @@ I used Balsamiq to create the wireframes. The brainteaser section was left out o
 
 * Checkout
 <img src="media/checkout_mobile.PNG">
+
+* Blog
+<img src="media/blog_wireframe_mobile.png">
+<img src="media/blog_detail_wireframe_mobile.png">
 
 [Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
