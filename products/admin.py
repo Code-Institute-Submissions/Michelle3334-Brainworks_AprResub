@@ -28,7 +28,7 @@ class ReviewAdmin(admin.ModelAdmin):
     list_display = (
         'product', 
         'author', 
-        'review', 
+        'text', 
         'date_created',
         )
 

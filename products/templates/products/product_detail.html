@@ -107,7 +107,7 @@
                 {% else %}    
                     {% for review in reviews %}
                     <div>
-                        <p class="mb-0">{{ review.review }}</p>
+                        <p class="mb-0">{{ review.text }}</p>
                         <p><small>Added by: {{ review.author }} | {{ review.date_created }}</small></p>
                     </div>
                     {% endfor %}

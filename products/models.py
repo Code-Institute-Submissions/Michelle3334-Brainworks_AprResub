@@ -39,7 +39,7 @@ class Review(models.Model):
     product = models.ForeignKey(
         Product, on_delete=models.CASCADE, related_name='reviews')
     author = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
-    review = models.TextField()
+    text = models.TextField()
     date_created = models.DateTimeField(auto_now_add=True)
 
     class Meta:
