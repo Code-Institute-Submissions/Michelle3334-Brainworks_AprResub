@@ -11,7 +11,7 @@
 
 {% block content %}
     <div class="container-fluid">
-        <div class="row mb-5 pb-5">
+        <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
                     {% if product.image %}
@@ -82,6 +82,36 @@
                         </div>
                     </form>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            {% if user.is_authenticated %}    
+            <div class="col-8 mx-5">
+                <h6>Leave a review for this product here:</h6>
+                <p><small>Posting as: {{ user.username }}</small></p>
+                <form method="POST">
+                    {{ review_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-black rounded-0 text-uppercase float-right">Submit</button>
+                </form>
+            </div>
+            {% else %}
+            <div class="col-8 mx-5">
+                <h6><small>Please <a href="{% url 'account_login' %}">log in</a> to leave a review on this product</small></h6>
+            </div>
+            {% endif %}
+            <div class="col-12 mb-5 pb-2 mx-5">
+                <h6>Reviews:</h6>
+                {% if not product.review.all %}
+                    <p><small>No reviews have been made on this product</small></p>
+                {% else %}    
+                    {% for review in reviews %}
+                    <div>
+                        <p class="mb-0">{{ review.review }}</p>
+                        <p><small>Added by: {{ review.author }} | {{ review.date_created }}</small></p>
+                    </div>
+                    {% endfor %}
+                {% endif %}
             </div>
         </div>
     </div>
