@@ -102,7 +102,7 @@
             {% endif %}
             <div class="col-12 mb-5 pb-2 mx-5">
                 <h6>Reviews:</h6>
-                {% if not product.review.all %}
+                {% if not product.reviews.all %}
                     <p><small>No reviews have been made on this product</small></p>
                 {% else %}    
                     {% for review in reviews %}
