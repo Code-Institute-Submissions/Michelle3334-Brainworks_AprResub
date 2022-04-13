@@ -6,6 +6,15 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
+    max-width: 2000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#topnav {
+    max-width: 2000px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* from Bulma */
