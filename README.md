@@ -240,6 +240,9 @@ My database schema was initially built in excel and then built using the online 
 <img src="media/dbm_products.PNG">
 <img src="media/dbm_categories.PNG">
 
+### Product review
+<img src="media/product_review.png">
+
 ### Cart app
 <img src="media/dbm_order.PNG">
 <img src="media/dbm_items.PNG">
