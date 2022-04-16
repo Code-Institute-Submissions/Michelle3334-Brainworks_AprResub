@@ -359,6 +359,8 @@ Screenshots of the final test are presented below:
     * Users can click on the link in the nav bar and view all the blogs.
 7. I would like to view comments made by users on the blog.
     * The user can view comments on a blog if they click on the individual blog and scroll to the bottom of the article.
+8. I would like to be able to view others opinions on the products.
+    * Users can see reviews on the products left by other users on the product detail page of an item.
 
 ### Returning user goals:
 1. I would like to be able to login or logout.
@@ -381,6 +383,8 @@ Screenshots of the final test are presented below:
     * Users will receive an email confirmation after placing an order.
 10. I would like to be able to view and add comments.
     * A logged in user can both view and add new comments to a blog.
+11. I would like to be able to leave a review for a product.
+    * A logged in user can leave a review for a specific product.
 
 ### As a website owner:
 1. I would like to be able to add a product to the store.
