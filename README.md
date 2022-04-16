@@ -177,7 +177,7 @@ The user can get to the products section by clicking on the shop icon on the nav
 If users click on an item they can view further details and select to add the item to the shopping cart.
 
 ### Product review
-Users can view the reviews left by other users, if logged in then the user can leave a review on a product.
+Users can view the reviews on products left by other users, if logged in then the user can leave a review on a product.
 <img src="media/log_in_review.png">
 <img src="media/add_review.png">
 
