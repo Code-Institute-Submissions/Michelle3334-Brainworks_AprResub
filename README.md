@@ -25,7 +25,6 @@ The live site can be found <a href="https://michelle-brainworks.herokuapp.com/" 
     * [Compatibility testing](https://github.com/Michelle3334/brainworks#compatibility-testing)
     * [Performance testing](https://github.com/Michelle3334/brainworks#performance-testing)
     * [User stories testing](https://github.com/Michelle3334/brainworks#user-stories-testing)
-    * [Bugs](https://github.com/Michelle3334/brainworks#bugs)
 6. [Deployment](https://github.com/Michelle3334/brainworks#deployment)
 7. [Credits](https://github.com/Michelle3334/brainworks#credits)
 8. [Acknowledgments](https://github.com/Michelle3334/brainworks#acknowledgements)
@@ -178,10 +177,10 @@ If users click on an item they can view further details and select to add the it
 
 ### Product review
 Users can view the reviews on products left by other users, if logged in then the user can leave a review on a product.
-<img src="media/log_in_review.png">
-<img src="media/add_review.png">
 
 <img src="media/item.PNG">
+<img src="media/log_in_review.png">
+<img src="media/add_review.png">
 
 ### Contact
 The user can contact the website via a link provided in the footer which is accessible on every page. It opens in a separate web page. The user also has an option to sign up to the newsletter.
@@ -223,6 +222,8 @@ The website has a privacy policy which is accessible from the footer on every pa
 
 ## Future features
 * A brainteaser page with fun riddles as well as the option to view the answers to the riddles.
+* Authentication that allows logged in users to only leave a review on a product they have purchased.
+* Functionality to allow a super user to add blogs on the front end instead of via the django admin module.
 
 [Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
