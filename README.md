@@ -48,6 +48,7 @@ User story goals were tracked using github projects kanban board.
 * I would like to be able to get in contact with the website owner.
 * I would like to be able to view a list of blogs to choose which one I would like to read more about.
 * I would like to be able to view the comments made on the blogs by other users.
+* I would like to be able to view others opinions on the products.
 ### Returning user goals:
 * I would like to be able to login or logout.
 * I would like to be able to recover my lost password.
@@ -59,6 +60,7 @@ User story goals were tracked using github projects kanban board.
 * I would like to view the order confirmation after checking out.
 * I would like to receive an email confirmation after placing an order.
 * I would like to be able to view individual blogs and add comments.
+* I would like to be able to leave a review for a product.
 
 [Back to Table of Contents](https://github.com/Michelle3334/brainworks#table-of-contents)
 
@@ -173,6 +175,11 @@ The user can get to the products section by clicking on the shop icon on the nav
 
 ### Item view
 If users click on an item they can view further details and select to add the item to the shopping cart.
+
+### Product review
+Users can view the reviews left by other users, if logged in then the user can leave a review on a product.
+<img src="media/log_in_review.png">
+<img src="media/add_review.png">
 
 <img src="media/item.PNG">
 
