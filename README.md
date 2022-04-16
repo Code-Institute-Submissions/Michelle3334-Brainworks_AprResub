@@ -284,6 +284,7 @@ My database schema was initially built in excel and then built using the online 
 * All links were tested multiple times during the development process and again once the project was completed to ensure that all pages were linked correctly.
 * All Forms and form elements were tested to ensure that they work as they should, with user feedback on errors as well as user feedback on successful submission.
 * Tested every functionality like Stripe, add/edit/delete products, contact, check out, and confirmation email with no errors found.
+* Authentication protocols were tested. If user is logged in on multiple tabs, and logs out on one tab - the authentication in the views.py does not allow the user to submit a comment on a blog or a review on a product.
 
 Manual Unit testing summary is as follows (this is not an exhaustive list of all the tests performed during development but a simple summary of the basic tests):
 
