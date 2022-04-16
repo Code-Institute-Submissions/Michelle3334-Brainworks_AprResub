@@ -302,6 +302,7 @@ Manual Unit testing summary is as follows (this is not an exhaustive list of all
 | Super user | Product management link under Account (to add a new product) only viewed when super user logged in, edit and delete links for existing products only display for super user | Passed |
 | Search bar | User can freetype in search bar and the relevant entries display, if no input is made then error message displays | Passed |
 | Add comment | Logged in User can type a comment on a blog and on submit it adds the comment to the list of comments | Passed |
+| Add review | Logged in User can add a review to a specific product and on submit it adds the review to the list of reviews | Passed |
 
 
 ## Code Validation
